@@ -15,7 +15,6 @@ trainData$Sex<-factor(trainData$Sex)
 trainData$Survived<-factor(trainData$Survived)
 testData$Pclass<-factor(testData$Pclass)
 testData$Sex<-factor(testData$Sex)
-testData$Survived<-factor(testData$Survived)
 
 ##imputing missing values
 library(mice)
@@ -57,6 +56,6 @@ predictions<-data.frame(testData$PassengerId,Survived)
 names(predictions)<-c("PassengerId","Survived")
 
 #writing output file
-write.csv(predictions,file="C:/Users/himank/Documents/R/titanic/predictions.csv",row.names = F,quote = F)
+write.csv(predictions,file="C:/Users/himank/Documents/R/titanic/predictionsLogistic.csv",row.names = F,quote = F)
 
 ##This model generates a test model accuracy of 0.77033
