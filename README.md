@@ -4,7 +4,9 @@ Contains 3 Logistic Regression models with nested regressors.
 The missing values are imputed using MICE PACKAGE in R and Manually in Python for many variables
 Test Set Accuracy of upto 0.8435
 Submission Accuracy of 0.77511
+
 FILES:
+
 train.csv : training data containing 891 rows and 12 columns. 
 test.csv: testing data containing 418 rows and 11 columsns.
 gender_submission.csv: an example file showcasing how the structure of the output file needs to be.
